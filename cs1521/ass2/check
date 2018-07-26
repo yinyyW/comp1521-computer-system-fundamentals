@@ -1,0 +1,40 @@
+#!/bin/sh
+
+if [ ! -d tests ]
+then
+	echo "No tests/ directory here. Are you in the right directory?"
+	exit 1
+fi
+
+if [ ! -f "Makefile" ]
+then
+	echo "No Makefile here. Are you in the right directory?"
+	exit 1
+fi
+
+echo "Compiling ... just in case you didn't ..."
+make
+
+for i in 1 2 3 4
+do
+	if [ ! -x "./test$i" ]
+	then
+		echo "Make didn't produce ./test$i"
+	fi
+done
+
+echo "Running tests ..."
+
+ulimit -t 10
+for tt in tests/*.sh
+do
+	t=`basename $tt .sh`
+	sh "$tt" 2>&1 | head -1500 > tests/$t.out
+	if cmp -s tests/$t.exp tests/$t.out
+	then
+		echo Passed test $t
+	else
+		echo Failed test $t
+		echo Check differences using \"diff tests/$t.exp tests/$t.out\"
+	fi
+done

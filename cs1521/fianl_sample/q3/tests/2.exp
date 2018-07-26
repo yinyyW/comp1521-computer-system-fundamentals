@@ -1,0 +1,49 @@
+
+t = 0
+   ID  Size  User  Prio
+    1    10     0   110
+Now starting job 1
+
+t = 1, current job 1 ends at t=1
+   ID  Size  User  Prio
+    2    50    10    60
+Now starting job 2
+
+t = 2, current job 2 ends at t=6
+   ID  Size  User  Prio
+    3    10    11    99
+
+t = 3, current job 2 ends at t=6
+   ID  Size  User  Prio
+    3    10    11    99
+    4     5    20    95
+
+t = 4, current job 2 ends at t=6
+   ID  Size  User  Prio
+    3    10    11    99
+    4     5    20    95
+    5    20    10    90
+
+t = 5, current job 2 ends at t=6
+   ID  Size  User  Prio
+    3    10    11    99
+    4     5    20    95
+    5    20    10    90
+
+t = 6, current job 2 ends at t=6
+   ID  Size  User  Prio
+    3    10    11    99
+    4     5    20    95
+    5    20    10    90
+Now starting job 3
+
+t = 7, current job 3 ends at t=7
+   ID  Size  User  Prio
+    4     5    20    95
+    5    20    10    90
+Now starting job 4
+
+t = 8, current job 4 ends at t=8
+   ID  Size  User  Prio
+    5    20    10    90
+Now starting job 5

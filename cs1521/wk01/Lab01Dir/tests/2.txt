@@ -1,0 +1,2 @@
+A simple file
+with two lines

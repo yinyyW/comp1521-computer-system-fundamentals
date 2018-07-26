@@ -1,0 +1,61 @@
+13 11 10 12 15 14 16 
+#nodes = 7
+Original Tree:
+       13
+       / \
+      /   \
+     /     \
+    /       \
+   11       15
+  / \       / \
+ /   \     /   \
+10   12   14   16
+
+> d 13
+New Tree:  #nodes=6,    depth=3
+     14
+     / \
+    /   \
+   11   15
+  / \     \
+ /   \    16
+10   12
+
+> d 15
+New Tree:  #nodes=5,    depth=3
+     14
+     / \
+    /   \
+   11   16
+  / \
+ /   \
+10   12
+
+> d 14
+New Tree:  #nodes=4,    depth=3
+    16
+    /
+   11
+  / \
+ /   \
+10   12
+
+> d 11
+New Tree:  #nodes=3,    depth=3
+   16
+   /
+  12
+ /
+10
+
+> d 12
+New Tree:  #nodes=2,    depth=2
+ 16
+ /
+10
+
+> d 10
+New Tree:  #nodes=1,    depth=1
+16
+
+> q

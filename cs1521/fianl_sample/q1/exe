@@ -1,0 +1,27 @@
+#!/bin/sh
+
+case $# in
+1) ;;
+*) echo "Usage: $0 ArraysFile.s" ; exit 1 ;;
+esac
+
+if [ ! -f "$1" ]
+then
+   echo "Can't find $1 file"
+   exit 1
+fi
+
+if [ ! -f main.s ]
+then
+   echo "Can't find main.s file"
+   exit 1
+fi
+
+if [ ! -f q1.s ]
+then
+   echo "Can't find q1.s file"
+   exit 1
+fi
+
+cat "$1" main.s q1.s > exe.s
+/home/cs1521/bin/spim -file exe.s | grep -v "Loaded:"

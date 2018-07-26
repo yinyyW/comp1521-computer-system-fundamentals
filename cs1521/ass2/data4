@@ -1,0 +1,20 @@
+a = malloc 248
+free a
+b = malloc 248
+c = malloc 248
+free b
+free c
+d = malloc 248
+e = malloc 248
+f = malloc 248
+free d
+free e
+free f
+g = malloc 248
+h = malloc 248
+i = malloc 248
+j = malloc 248
+free g
+free h
+free i
+free j

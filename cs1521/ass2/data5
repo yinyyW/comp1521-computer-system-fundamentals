@@ -1,0 +1,5 @@
+a = malloc 1000
+b = malloc 1000
+c = malloc 1000
+d = malloc 1000
+e = malloc 1000

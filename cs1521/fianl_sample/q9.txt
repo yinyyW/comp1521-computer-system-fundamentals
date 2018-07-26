@@ -1,0 +1,19 @@
+Q9 COMP1521 17s2 Final Exam
+
+A.
+
+#processes = 
+
+
+B.
+
+
+Student:
+   go to library
+   get a study room
+   study for a while
+   leave library
+
+
+Library:
+   open the study rooms

@@ -1,0 +1,28 @@
+Q6 COMP1921 17s2 Final Exam
+
+A.
+
+sizeof(Node) = ...
+
+B.
+
+...
+
+
+C.
+
+Node *L; // is set to list shown on diagram
+
+// code to convert Before ...
+
+...
+
+// ... into After
+
+
+D.
+
+void freeNodes(Node *L)
+{
+	...
+}
